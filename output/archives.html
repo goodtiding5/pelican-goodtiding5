@@ -190,7 +190,9 @@ init_mathjax();
     <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
 
     <link href="/theme/css/pygments/native.css" rel="stylesheet">
+    <link href="/theme/tipuesearch/tipuesearch.css" rel="stylesheet">
     <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
+        <link href="/static/css/custom.css" rel="stylesheet">
 
 
 
@@ -221,6 +223,11 @@ goodtiding5            </a>
                         </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
+              <li><span>
+                <form class="navbar-search" action="/search.html">
+                  <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input" required>
+                </form></span>
+              </li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -237,6 +244,10 @@ goodtiding5            </a>
     <section id="content">
       <h1>Archives for goodtiding5</h1>
         <div id="archives">
+                <p>
+                    <span class="categories-timestamp"><time datetime="2018-07-24T21:00:00-07:00">Tue 24 July 2018</time></span>
+                    <a href="/first-post-part-4.html">First Post - Part 4</a>
+                </p>
                 <p>
                     <span class="categories-timestamp"><time datetime="2018-07-24T20:50:00-07:00">Tue 24 July 2018</time></span>
                     <a href="/first-post-part-3.html">First Post - Part 3</a>
@@ -277,13 +288,13 @@ goodtiding5            </a>
   <a href="/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
   <ul class="list-group " id="tags">
     <li class="list-group-item tag-4">
-      <a href="/tag/markdown.html">markdown</a>
+      <a href="/tag/blog.html">blog</a>
     </li>
     <li class="list-group-item tag-4">
       <a href="/tag/python.html">python</a>
     </li>
     <li class="list-group-item tag-4">
-      <a href="/tag/blog.html">blog</a>
+      <a href="/tag/markdown.html">markdown</a>
     </li>
   </ul>
 </li>
@@ -336,6 +347,7 @@ goodtiding5            </a>
 <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
 <script src="/theme/js/respond.min.js"></script>
 
+    <script src="/static/js/custom.js"></script>
 
 
 <script type="text/javascript">

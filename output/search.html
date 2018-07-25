@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>Greetings - goodtiding5</title>
+    <title>Search - goodtiding5
+</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -174,8 +175,7 @@ init_mathjax();
 </script>
 
 
-    <meta name="author" content="K Zhao" />
-    <meta name="keywords" content="Greetings" />
+        <meta name="author" content="K Zhao" />
 
     <!-- Open Graph tags -->
         <meta property="og:site_name" content="goodtiding5" />
@@ -219,7 +219,7 @@ goodtiding5            </a>
                         <li >
                             <a href="/category/example-posts.html">Example posts</a>
                         </li>
-                        <li class="active">
+                        <li >
                             <a href="/category/greetings.html">Greetings</a>
                         </li>
             </ul>
@@ -242,14 +242,7 @@ goodtiding5            </a>
 <div class="container">
     <div class="row">
         <div class="col-sm-9">
-            <article>
-                <h2><a href="/hello-world.html">Hello World</a></h2>
-                <div class="summary"><p>The introducing post of this site</p>
-                    <a class="btn btn-default btn-xs" href="/hello-world.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-
+<div id="tipue_search_content"></div>
         </div>
         <div class="col-sm-3" id="sidebar">
             <aside>
@@ -348,5 +341,17 @@ jQuery(document).ready(function($) {
 });
 });
 </script>
+    <script type="text/javascript" src="/theme/tipuesearch/tipuesearch_set.js"></script>
+    <script type="text/javascript" src="/theme/tipuesearch/tipuesearch.min.js"></script>
+    <script>
+    $(document).ready(function() {
+      $('#tipue_search_input').tipuesearch({
+        'mode' : 'json',
+        'show': 10,
+        'newWindow': false,
+        'contentLocation': 'tipuesearch_content.json'
+      });
+    });
+    </script>
 </body>
 </html>
