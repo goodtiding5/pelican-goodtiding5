@@ -3,3 +3,4 @@ markdown
 fabric3
 bs4
 ghp-import
+jupyter
